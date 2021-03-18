@@ -33,11 +33,6 @@ namespace task_1_calculator
             double num;
             return num = number1 / number2;
         }
-        public double Squaring(double number1)
-        {
-            double num;
-            return num = number1 * number1;
-        }
     }
     class Program
     {
@@ -58,61 +53,44 @@ namespace task_1_calculator
 
                     double number1 = Convert.ToDouble(number1_1);
 
-                    Console.WriteLine("Введите необходимую операцию: * = умножение , - = вычитание , + = сложение , / = деление, ^2 = возведение числа в квадрат(другие степени записываются без '^') и нажмите Enter.");
+                    Console.WriteLine("Введите необходимую операцию: * = умножение , - = вычитание , + = сложение , / = деление, любое число = возведение числа в степень, равную введенному числу, и нажмите Enter.");
                     var a = Console.ReadLine();
                     try
                     {
-                        int c = Convert.ToInt32(a);
+                        double c = Convert.ToDouble(a);
                         double result = Math.Pow(number1, c);
                         Console.WriteLine(result);
+
                     }
-                    catch
-                    {
-                        try
-                        {
+                    catch {
+                            Console.WriteLine("Введите второе число и нажмите Enter");
+                            string number2_1 = Console.ReadLine();
+                            double number2 = Convert.ToDouble(number2_1);
 
 
-                            double c = Convert.ToDouble(a);
-                            double result = Math.Pow(number1, c);
-                            Console.WriteLine(result);
-                        }
-
-                        catch
-                        {
-                            if (a == "^2")
+                            if (a == "*")
                             {
-                                Console.WriteLine("Результат: " + operation.Squaring(number1));
+                                double result = operation.Multiplication(number1, number2);
+                                Console.WriteLine(result);
                             }
-                            else
+                            else if (a == "-")
                             {
-                                Console.WriteLine("Введите второе число и нажмите Enter");
-                                string number2_1 = Console.ReadLine();
-                                double number2 = Convert.ToDouble(number2_1);
-
-
-                                if (a == "*")
-                                {
-                                    double result = operation.Multiplication(number1, number2);
-                                    Console.WriteLine(result);
-                                }
-                                else if (a == "-")
-                                {
-                                    double result = operation.Substraction(number1, number2);
-                                    Console.WriteLine(result);
-                                }
-                                else if (a == "+")
-                                {
-                                    double result = operation.Addition(number1, number2);
-                                    Console.WriteLine(result);
-                                }
-                                else if (a == "/")
-                                {
-                                    double result = operation.Division(number1, number2);
-                                    Console.WriteLine(result);
-                                }
+                                double result = operation.Substraction(number1, number2);
+                                Console.WriteLine(result);
                             }
-                        }
+                            else if (a == "+")
+                            {
+                                double result = operation.Addition(number1, number2);
+                                Console.WriteLine(result);
+                            }
+                            else if (a == "/")
+                            {
+                                double result = operation.Division(number1, number2);
+                                Console.WriteLine(result);
+                            }
                     }
+
+                    
                 }
                 catch (DivideByZeroException)
                 {
