@@ -67,7 +67,9 @@ namespace WPFBindingExample
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
             if (PhonesListBox.SelectedItem != null)
+            {
                 Phones.Remove(PhonesListBox.SelectedItem as Phone);
+            }
         }
 
 
@@ -76,7 +78,9 @@ namespace WPFBindingExample
         public void NotifyPropertyChanged(string propName)
         {
             if (this.PropertyChanged != null)
+            {
                 this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+            }
         }
     }
 }
