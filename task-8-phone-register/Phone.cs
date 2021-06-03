@@ -81,8 +81,10 @@ namespace WPFBindingExample
 		//функция, которую надо запустить, чтобы сообщить об обновлении объекта
 		public void NotifyPropertyChanged(string propName)
 		{
-			if (this.PropertyChanged != null)
+			if (this.PropertyChanged != null) 
+			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+			}
 		}
 	}
 }
