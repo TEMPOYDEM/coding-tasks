@@ -15,14 +15,23 @@ namespace task_6_monty_hall_problem
 
         static void Main(string[] args)
         {
+            Lottery();
+            Console.ReadKey();
+        }
+        public static void Lottery()
+        {
+            double winrate = 0;
             int tries = 0;
-            Console.WriteLine("cc");
             var chance = new Random();
             var Monty = new Random();
-            var winning_options = new List<int> { };
+            var winning_options = new List<bool> { };
+            double wins_A = 0;
+            double wins_B = 0;
             bool door1 = false;
             bool door2 = false;
             bool door3 = false;
+            bool A = false;
+            bool B = false;
             while (tries < 1000)
             {
                 int chance_known = chance.Next(4);
@@ -35,55 +44,67 @@ namespace task_6_monty_hall_problem
                     door1 = true;
                     door2 = false;
                     door3 = false;
-                    bool[] Doors_Choice = { door1, door2, door3 };
-                   // Console.WriteLine("Дверь 1 - приз  " + "Двери 2 и 3 - пусто");
+                    // Console.WriteLine("Дверь 1 - приз  " + "Двери 2 и 3 - пусто");
                 }
                 else if (chance_known == 2)
                 {
                     door1 = false;
                     door2 = true;
                     door3 = false;
-                    bool[] Doors_Choice = { door1, door2, door3 };
                     //Console.WriteLine("Дверь 1 - пусто  " + "Дверь 2 - приз  " + "Дверь 3 - пусто");
+
                 }
                 else if (chance_known == 3)
                 {
                     door1 = false;
                     door2 = false;
                     door3 = true;
-                    bool[] Doors_Choice = { door1, door2, door3 };
-                    //Console.WriteLine("Двери 1 и 2 - пусто  " + "Дверь 3 - приз");
+                    //Console.WriteLine("Двери 1 и 2 - пусто  " + "Дверь 3 - приз")
+                }
+                List<bool> Doors_Choice = new List<bool> { door1, door2, door3 };
+                int losedoor = Monty.Next(1,3);
+                bool winopen = Doors_Choice.ElementAt(losedoor);
+                while (winopen == true)
+                {
+                    try
+                    {
+                        losedoor++;
+                        winopen = Doors_Choice.ElementAt(losedoor);
+                    }
+                    catch
+                    {
+                        losedoor = losedoor-2;
+                        winopen = Doors_Choice.ElementAt(losedoor);
+                    }
+                }
+                A = Doors_Choice.ElementAt(0);
+                if(A == true)
+                {
+                    wins_A++;
+                }
+                int i = 1;
+                if (i == losedoor)
+                {
+                    i++;
+                }
+                B = Doors_Choice.ElementAt(i);
+                if (B == true)
+                {
+                    wins_B++;
                 }
                 tries++;
-                winning_options.Add(chance_known);
             }
-            //Боб выбирает дверь 1, потом сделать так, чтобы Монти через рандом открывал дверь со значением false. Когда двеь открыта (удалена из массива методом pop), сделать смену варианта выбора. После этого в цикле while проверять условие bool, так как Бобу формата bool будет присваиваться значение t или f. В цикле организовать проверку на принадлежность к true. В случае совпадения через цикл if добавляется к wins++
-            double winrate = 0;
-            double wins = 0;
-            foreach (int i in winning_options)
-            {
-                if(i == 1)
-                {
-                    wins++;
-                }
-            }
-            winrate = wins / 1000;
-            Console.WriteLine(wins);
-            Console.WriteLine("Процент побед Алисы:  " + winrate * 100);
+            Console.WriteLine(wins_A);
+            Console.WriteLine(wins_B);
+            winrate = wins_A / 1000;
+            Console.WriteLine("Процент побед Алисы:  " + winrate*100);
+            Console.ReadKey();
+            
+            winrate = wins_B / 1000;
+            
+            Console.WriteLine("Процент побед Боба:  " + winrate*100);
             Console.ReadKey();
 
-            wins = 0;
-            foreach (int i in winning_options)
-            {
-                if (i == 2 || i == 3)
-                {
-                    wins++;
-                }
-            }
-            winrate = wins / 1000;
-            Console.WriteLine(wins);
-            Console.WriteLine("Процент побед Боба:  " + winrate * 100);
-            Console.ReadKey();
         }
     }
 }

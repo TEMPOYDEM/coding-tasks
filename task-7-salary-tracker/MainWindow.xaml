@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:task_7_salary_tracker"
-        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance Type=local:MainWindow}"
+        mc:Ignorable="d" 
         Title="Расчёт зарплат" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -19,7 +20,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Path=Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBlock Text="{Binding Path=Seller_sal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBlock Text=", Зарплата (базовая): "/>
                         <TextBlock Text="{Binding Path=Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBlock Text=", Месячная прибыль магазина: "/>
@@ -36,7 +37,7 @@
         <Button Content="Удалить" Name="RemoveButton" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="175" Click="RemoveButton_Click"/>
         <TextBox Name="NameTextBox" HorizontalAlignment="Center" Margin="0,55,0,0" DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
         <TextBox Name="PriceTextBox" HorizontalAlignment="Center" Margin="0,90,0,0"  DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top" Width="180"  Text="Количество оплачиваемых смен "/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top" Width="180"  Text="Зарплата (базовая) "/>
         <TextBox Name="NumberTextBox" HorizontalAlignment="Center" Margin="0,130,0,0" DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
     </Grid>
 </Window>

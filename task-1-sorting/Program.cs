@@ -13,14 +13,11 @@ namespace task_1_sorting
         {
             while (true)
             {
-
                 double[] numbers = new double[24];
-
                 Console.WriteLine("Введите 24 числа через Enter");
-
                 for (int i = 0; i < numbers.Length; i++)
                 {
-                    Console.Write("{0}-е число: ", i + 1);
+                    Console.Write(i + 1 + "-е число: ");
                     numbers[i] = double.Parse(Console.ReadLine());
                 }
                 Console.WriteLine("Введите номер необходимой операции и нажмите Enter");
@@ -74,8 +71,6 @@ namespace task_1_sorting
                                         }
                                     }
                                 }
-
-                                // вывод
                                 Console.WriteLine("Вывод отсортированного массива");
 
                                 {
@@ -85,7 +80,6 @@ namespace task_1_sorting
                             }
                             else if (Start == 2)
                             {
-                                // сортировка
                                 double t;
                                 for (int i = 0; i < numbers.Length - 1; i++)
                                 {

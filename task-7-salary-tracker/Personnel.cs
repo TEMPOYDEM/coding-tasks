@@ -1,68 +1,46 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Personnel_
+namespace Salary_tracker
 {
-	public class Seller : INotifyPropertyChanged
+	public class Personnel : INotifyPropertyChanged
 	{
-		private string Seller_sal;
-		public double Seller
+		private string Seller;
+		public double Seller_sal
 		{
 			get
 			{
-				return Seller_sal
+				return _seller_sal
 			}
 			set
 			{
-				bool Changed = int.TryParse(value.ToString(), out Seller_sal);
+				bool Changed = int.TryParse(value.ToString(), out _seller_sal);
 				//вызываем функцию, которая сообщает об обновлении поля Price
 				if (Changed) this.NotifyPropertyChanged("Seller_sal");
 			}
 		}
-	}
-	public class Main_Seller : INotifyPropertyChanged
-	{
-		private string Main_sal;
-		public double Main_Seller()
+		private string Month_income
+		public double Month
 		{
 			get
 			{
+				return _month_income
 
 			}
 			set
 			{
-				double Salary = (Seller.Salary) * (Seller.Salary) * 0.15 * (Math.Pow(10, 4)) + Month_Income * 0.1 * Math.Pow(10, -2)
-		}
-		}
-	}
-	public class Manager : INotifyPropertyChanged
-	{
-		private string Manager_sal;
-		public double Manager()
-		{
-			get
-			{
-
+				if (_month_income != value)
+				{
+					bool Changed = int.TryParse(value.ToString(), out _month_income);
+					//вызываем функцию, которая сообщает об обновлении поля Price
+					if (Changed) this.NotifyPropertyChanged("Month_income");
+				}
 			}
-			set
-			{
-				double Salary = (Seller.Salary) * (Seller.Salary) * 0.25 * (Math.Pow(10, 4)) + Month_Income * 0.5 * Math.Pow(10, -2)
 		}
-		}
-	}
-	public class Driver : INotifyPropertyChanged
-	{
-		private string Driver_sal;
-		public double Driver()
-		{
-			get
-			{
+		double Main_sal = (Seller.Seller_sal) * (Seller.Seller_sal) * 0.15 * (Math.Pow(10, 4)) + Month_Income * 0.1 * Math.Pow(10, -2);
 
-			}
-			set
-			{
-				double Salary = Seller.Salary * 0.85
-		}
-		}
+		double Manager_sal = (Seller.Seller_sal) * (Seller.Seller_sal) * 0.25 * (Math.Pow(10, 4)) + Month_Income * 0.5 * Math.Pow(10, -2);
+
+		double Driver_sal = Seller.Seller_sal * 0.85;		
 	}
 }
