@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace task_7_salary_tracker
 {
     /// <summary>
@@ -22,23 +23,35 @@ namespace task_7_salary_tracker
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
-        private ObservableCollection<Seller> Seller_sal;
+        private ObservableCollection<Personnel> _salary;
+
+        public ObservableCollection<Personnel> Personnels
+        {
+            get
+            {
+                return _salary;
+            }
+            set
+            {
+                _salary = value;
+                INotifyPropertyChanged("Personnels");
+            }
+        }
         public MainWindow()
         {
             InitializeComponent();
         }
         public MainWindow()
         {
-            Seller_sal = new ObservableCollection<Seller>();
+            Seller_sal = new ObservableCollection<>();
             InitializeComponent();
-            // привязывание коллекции как источнику данных для листбокса
-            PhonesListBox.ItemsSource = Phones;
+                        
         }
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                Phones.Add(new Phone(WorkersList.Text, Convert.ToInt32(WorkersList.Text), Convert.ToInt32(WorkersList.Text)));
+                Per.Add(new Phone(WorkersList.Text, Convert.ToInt32(WorkersList.Text), Convert.ToInt32(WorkersList.Text)));
 
             }
             catch
