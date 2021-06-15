@@ -41,8 +41,8 @@ namespace WpfTutorialSamples.Rich_text_controls
 
 		private void cmbFontSize_TextChanged(object sender, TextChangedEventArgs e)
 		{
-			rthtrhtrrtbEditor.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
-		}
+			rtbEditor.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
+        }
 		private void c0_Click(object sender, RoutedEventArgs e)
 		{
 			rtbEditor.Background = Brushes.White;
