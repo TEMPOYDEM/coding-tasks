@@ -25,17 +25,22 @@ namespace task_3_job_assigner
                     work[i, f] = price;
                     comparison[f] = price;
                 }
-                best[i] = comparison.Min().;
+                best[i] = comparison.Min();
             }
             for(int i = 0; i < tasks.Length; i++)
-            {
+            { 
+                int[] worker = new int[tasks.Length];
                 Console.WriteLine(best[i]);
-                for(int f = 0; f != best.IndexOf(best,); )
+                for (int f = 0; f < tasks.Length; f++)
+                {
+                    worker[f] = work[i, f];
+                }
+                for(int g = 0; g != worker.IndexOf(best[i],best.GetValue(i)); g++)
                 {
 
                 }
             }
-            work[1,work.IndexOf(work,best[1])];
+            
             Console.ReadLine();
         }
     }
