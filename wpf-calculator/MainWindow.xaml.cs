@@ -43,7 +43,23 @@ namespace wpf_calculator
                 }
                 else if (textButton == "x")
                 {
-                    text.Text = text.Text.Substring(text.Text.Length - 1);
+                    if (text.Text.EndsWith(".") == true || text.Text.Equals("") || text.Text.EndsWith("/") == true || text.Text.EndsWith("*") == true || text.Text.EndsWith("-") == true || text.Text.EndsWith("+") == true || text.Text.EndsWith("(") == true || text.Text.EndsWith(")") == true)
+                    {
+                    }
+                    else
+                    {
+                        text.Text += '*';
+                    }
+                }
+                else if (textButton == "/")
+                {
+                    if (text.Text.EndsWith(".") == true || text.Text.Equals("") || text.Text.EndsWith("/") == true || text.Text.EndsWith("*") == true || text.Text.EndsWith("-") == true || text.Text.EndsWith("+") == true || text.Text.EndsWith("(") == true || text.Text.EndsWith(")") == true)
+                    {
+                    }
+                    else
+                    {
+                        text.Text += '/';
+                    }
                 }
                 else if (textButton == "=")
                 {
@@ -51,14 +67,19 @@ namespace wpf_calculator
                 }
                 else if (textButton == ".")
                 {
-                    if (text.Text.EndsWith(".") == true || text.Text.Equals(""))
+                    if (text.Text.EndsWith(".") == true || text.Text.Equals("") || text.Text.EndsWith("/") == true || text.Text.EndsWith("*") == true || text.Text.EndsWith("-") == true || text.Text.EndsWith("+") == true || text.Text.EndsWith("(") == true || text.Text.EndsWith(")") == true)
                     {
                     }
                     else
                     {
-                        text.Text += textButton;
-                    }
+                        string lastPiece = text.Text.Split(new char[] { '+', '-', '*', '/' })[text.Text.Split(new char[] { '+', '-', '*', '/' }).Count() - 1];
+                        if (!lastPiece.Contains('.')) text.Text += ".";
 
+                        lastPiece = text.Text.Split(new char[] { '+', '-', '*', '/' })[text.Text.Split(new char[] { '+', '-', '*', '/' }).Count() - 1];
+
+                        if (!lastPiece.Contains('.')) text.Text += ".";
+
+                    }
                 }
                 else text.Text += textButton;
             }

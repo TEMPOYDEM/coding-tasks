@@ -26,8 +26,8 @@
             <Button Grid.Row="1" FontSize="35" Grid.Column="0">(</Button>
             <Button Grid.Row="1" FontSize="35" Grid.Column="1">)</Button>
             <Button Grid.Row="1" FontSize="35" Grid.Column="2">x</Button>
-            <Button FontSize="35" VerticalContentAlignment="Center" Grid.Column="2" Grid.ColumnSpan="2" Margin="200,70,0,0" Grid.RowSpan="3">C</Button>
-
+            <Button FontSize="35" Grid.Column="3" Grid.Row="1">C</Button>
+            <Button FontSize="35" Grid.Column="3" Grid.Row="2">/</Button>
             <Button Grid.Row="2" FontSize="35" Grid.Column="0">1</Button>
             <Button Grid.Row="2" FontSize="35" Grid.Column="1">2</Button>
             <Button Grid.Row="2" FontSize="35" Grid.Column="2">3</Button>
