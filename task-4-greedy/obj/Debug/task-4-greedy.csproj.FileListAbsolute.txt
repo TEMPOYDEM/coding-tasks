@@ -1,0 +1,7 @@
+C:\Users\Artem\source\repos\coding-tasks\task-4-greedy\bin\Debug\task-4-greedy.exe.config
+C:\Users\Artem\source\repos\coding-tasks\task-4-greedy\bin\Debug\task-4-greedy.exe
+C:\Users\Artem\source\repos\coding-tasks\task-4-greedy\bin\Debug\task-4-greedy.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-4-greedy\obj\Debug\task-4-greedy.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\coding-tasks\task-4-greedy\obj\Debug\task-4-greedy.exe
+C:\Users\Artem\source\repos\coding-tasks\task-4-greedy\obj\Debug\task-4-greedy.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-4-greedy\obj\Debug\task-4-greedy.csproj.AssemblyReference.cache

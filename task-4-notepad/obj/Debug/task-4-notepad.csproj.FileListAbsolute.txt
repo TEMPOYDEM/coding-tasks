@@ -1,0 +1,14 @@
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\bin\Debug\task-4-notepad.exe.config
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\bin\Debug\task-4-notepad.exe
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\bin\Debug\task-4-notepad.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\task-4-notepad.csprojAssemblyReference.cache
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\MainWindow.g.cs
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\App.g.cs
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\task-4-notepad_MarkupCompile.cache
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\MainWindow.baml
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\task-4-notepad.g.resources
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\task_4_notepad.Properties.Resources.resources
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\task-4-notepad.csproj.GenerateResource.cache
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\task-4-notepad.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\task-4-notepad.exe
+C:\Users\Artem\source\repos\coding-tasks\task-4-notepad\obj\Debug\task-4-notepad.pdb

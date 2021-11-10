@@ -1,0 +1,7 @@
+C:\Users\Artem\source\repos\coding-tasks\task-3-job-assigner\bin\Debug\task-3-job-assigner.exe.config
+C:\Users\Artem\source\repos\coding-tasks\task-3-job-assigner\bin\Debug\task-3-job-assigner.exe
+C:\Users\Artem\source\repos\coding-tasks\task-3-job-assigner\bin\Debug\task-3-job-assigner.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-3-job-assigner\obj\Debug\task-3-job-assigner.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\coding-tasks\task-3-job-assigner\obj\Debug\task-3-job-assigner.exe
+C:\Users\Artem\source\repos\coding-tasks\task-3-job-assigner\obj\Debug\task-3-job-assigner.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-3-job-assigner\obj\Debug\task-3-job-assigner.csproj.AssemblyReference.cache

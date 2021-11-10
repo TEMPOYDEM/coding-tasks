@@ -1,0 +1,14 @@
+C:\Users\Artem\source\repos\task-2-multipliers\bin\Debug\task-2-multipliers.exe.config
+C:\Users\Artem\source\repos\task-2-multipliers\bin\Debug\task-2-multipliers.exe
+C:\Users\Artem\source\repos\task-2-multipliers\bin\Debug\task-2-multipliers.pdb
+C:\Users\Artem\source\repos\task-2-multipliers\obj\Debug\task-2-multipliers.csprojAssemblyReference.cache
+C:\Users\Artem\source\repos\task-2-multipliers\obj\Debug\task-2-multipliers.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\task-2-multipliers\obj\Debug\task-2-multipliers.exe
+C:\Users\Artem\source\repos\task-2-multipliers\obj\Debug\task-2-multipliers.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-2-multipliers\bin\Debug\task-2-multipliers.exe.config
+C:\Users\Artem\source\repos\coding-tasks\task-2-multipliers\bin\Debug\task-2-multipliers.exe
+C:\Users\Artem\source\repos\coding-tasks\task-2-multipliers\bin\Debug\task-2-multipliers.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-2-multipliers\obj\Debug\task-2-multipliers.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\coding-tasks\task-2-multipliers\obj\Debug\task-2-multipliers.exe
+C:\Users\Artem\source\repos\coding-tasks\task-2-multipliers\obj\Debug\task-2-multipliers.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-2-multipliers\obj\Debug\task-2-multipliers.csproj.AssemblyReference.cache
