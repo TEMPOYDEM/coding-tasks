@@ -49,7 +49,7 @@ namespace WPFBindingExample
         {
             try
             {
-                if (NumberTextBox.Text.Length > 10)
+                if (NumberTextBox.Text.Length >= 11)
                 {
                     MessageBox.Show("Введен номер телефона, превышающий 10 символов. Попробуйте ввести его без кода региона, или проверьте правильность написания", "My App", MessageBoxButton.OK);
                 }
