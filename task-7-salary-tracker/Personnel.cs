@@ -37,7 +37,7 @@ namespace Salary_tracker
 				}
 			}
 		}
-		double Main_sal = (Seller.Seller_sal) * (Seller.Seller_sal) * 0.15 * (Math.Pow(10, 4)) + Month_Income * 0.1 * Math.Pow(10, -2);
+
 
 		double Manager_sal = (Seller.Seller_sal) * (Seller.Seller_sal) * 0.25 * (Math.Pow(10, 4)) + Month_Income * 0.5 * Math.Pow(10, -2);
 

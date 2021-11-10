@@ -12,11 +12,12 @@
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="160*"/>
-            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="226*"/>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="422*"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <ListBox Name="WorkersList" Grid.Column="0">
+        <ListBox Name="WorkersList" Grid.Column="0" Margin="0,0,0.4,0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -31,13 +32,13 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Button Content="Сохранить" Name="AddButton" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" Width="175" Click="AddButton_Click"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="175"  Text="Месячная прибыль магазина: "/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Top" Width="180"  Text="Количество оплачиваемых смен "/>
-        <Button Content="Удалить" Name="RemoveButton" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="175" Click="RemoveButton_Click"/>
-        <TextBox Name="NameTextBox" HorizontalAlignment="Center" Margin="0,55,0,0" DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
-        <TextBox Name="PriceTextBox" HorizontalAlignment="Center" Margin="0,90,0,0"  DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top" Width="180"  Text="Зарплата (базовая) "/>
-        <TextBox Name="NumberTextBox" HorizontalAlignment="Center" Margin="0,130,0,0" DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Button Content="Сохранить" Name="AddButton" HorizontalAlignment="Center" Margin="26,15,25.4,0" VerticalAlignment="Top" Width="175" Click="AddButton_Click"/>
+        <TextBlock HorizontalAlignment="Center" Margin="26,35,25.4,0" VerticalAlignment="Top" Width="175"  Text="Месячная прибыль магазина: "/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Margin="23,75,23.4,0" VerticalAlignment="Top" Width="180"  Text="Количество оплачиваемых смен "/>
+        <Button Content="Удалить" Name="RemoveButton" HorizontalAlignment="Center" Margin="26,150,25.4,0" VerticalAlignment="Top" Width="175" Click="RemoveButton_Click"/>
+        <TextBox Name="NameTextBox" HorizontalAlignment="Center" Margin="26,55,25.4,0" DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox Name="PriceTextBox" HorizontalAlignment="Center" Margin="25,90,25.4,0"  DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Margin="23,115,23.4,0" VerticalAlignment="Top" Width="180"  Text="Зарплата (базовая) "/>
+        <TextBox Name="NumberTextBox" HorizontalAlignment="Center" Margin="25,130,25.4,0" DataContext="{Binding ElementName=WorkersList, Path=SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
     </Grid>
 </Window>

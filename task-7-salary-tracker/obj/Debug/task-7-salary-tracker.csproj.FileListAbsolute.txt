@@ -1,0 +1,16 @@
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\bin\Debug\task-7-salary-tracker.exe.config
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\bin\Debug\task-7-salary-tracker.exe
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\bin\Debug\task-7-salary-tracker.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker.csprojAssemblyReference.cache
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\MainWindow.g.cs
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\App.g.cs
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker_MarkupCompile.cache
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker_MarkupCompile.lref
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\MainWindow.baml
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker.g.resources
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task_7_salary_tracker.Properties.Resources.resources
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker.csproj.GenerateResource.cache
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker.exe
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker.pdb
+C:\Users\Artem\source\repos\coding-tasks\task-7-salary-tracker\obj\Debug\task-7-salary-tracker.csproj.AssemblyReference.cache
