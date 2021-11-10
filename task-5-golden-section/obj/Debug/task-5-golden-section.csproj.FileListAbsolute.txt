@@ -1,0 +1,7 @@
+C:\Users\Artem\source\repos\task-5-golden-section\bin\Debug\task-5-golden-section.exe.config
+C:\Users\Artem\source\repos\task-5-golden-section\bin\Debug\task-5-golden-section.exe
+C:\Users\Artem\source\repos\task-5-golden-section\bin\Debug\task-5-golden-section.pdb
+C:\Users\Artem\source\repos\task-5-golden-section\obj\Debug\task-5-golden-section.csprojAssemblyReference.cache
+C:\Users\Artem\source\repos\task-5-golden-section\obj\Debug\task-5-golden-section.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\task-5-golden-section\obj\Debug\task-5-golden-section.exe
+C:\Users\Artem\source\repos\task-5-golden-section\obj\Debug\task-5-golden-section.pdb
